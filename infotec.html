@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Informações Técnicas sobre o Linux</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+   <style>
+
+        body{
+          background-color: rgb(22, 22, 22);
+      
+        }
+
+        body::-webkit-scrollbar {
+          width: 12px;              
+        }
+
+        body::-webkit-scrollbar-track {
+          background: none     
+        }
+
+        body::-webkit-scrollbar-thumb {
+          background-color: yellow;    
+          border-radius: 20px;      
+          border: 3px solid yellow;  
+        }
+
+.minha-div {
+    /* Defina uma altura máxima e permita a rolagem vertical */
+    max-height: 600px;
+    overflow-y: auto;
+    
+    
+    /* Personalize a largura e a cor da borda da barra de rolagem */
+    scrollbar-width: thin;
+    
+    /* Personalize a largura e a cor do trilho da barra de rolagem */
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: rgb(22, 22, 22);;
+    }
+    
+    /* Personalize a cor do manipulador (o indicador da posição atual da barra de rolagem) */
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(255, 255, 0);
+        border-radius: 20px;
+    }
+}
+
+
+
+        section {
+          width: 100%;
+          height: 100vh;
+        }
+
+        .section2 {
+          width: 100%;
+          height: 130vh;
+        }
+
+        #section1{
+          background-color: white;
+        }
+
+        nav{
+          background-color: black;
+        }
+
+        nav a{
+          color: yellow;
+        }
+
+        .textos {
+          font-size: 23px;
+          margin-left: 15%;
+          margin-right: 15%;
+          margin-top: 1%;
+          text-align: justify;
+          font-family: 'calibri';
+          color: white;
+        }
+
+        .textos2 {
+          font-size: 23px;
+          margin-left: 15%;
+          margin-right: 15%;
+          margin-top: 1%;
+          text-align: justify;
+          font-family: 'calibri';
+          color:black;
+        }
+
+        .lista {
+          font-size: 23px;
+          margin-left: 15%;
+          margin-right: 15%;
+          margin-top: 1%;
+          text-align: justify;
+          font-family: 'calibri';
+          color: white;
+        }
+
+        h1 {
+            margin-left: 12%;
+            margin-top: 5%;
+            margin-bottom: 2%;
+            color: white;
+        }
+
+        .titulo2 {
+            margin-left: 12%;
+            margin-top: 5%;
+            margin-bottom: 2%;
+            color:black;
+        }
+
+        .seta{
+  float: right;
+
+}
+
+footer{
+  text-align: center;
+  color: white;
+  margin-top: 2%;
+}
+
+   </style>
+
+  </head>
+  <body>
+    
+    <nav class="nav nav-pills nav-fill">
+      <a class="nav-item nav-link" href="index.html">Home</a>
+      <a class="nav-item nav-link" href="historia.html">História</a>
+      <a class="nav-item nav-link active" href="infotec.html">Info. Técnicas</a>
+      <a class="nav-item nav-link" href="pontosnp.html">Uso no geral</a>
+    </nav>
+
+    
+    <h1>O que é linux e uma distribuição </h1>
+
+    <p class="textos"> Se você leu um pouco da história do Linux disponibilizada nesse site, já deve estar um pouco mais familiarizado com que falaremos a seguir. Em resumo <b>Linux é um sistema operacional</b>  de código aberto baseado no kernel Linux. O kernel é a parte central do sistema operacional que gerencia hardware e recursos do sistema, permitindo que outros softwares se comuniquem com o hardware do computador. O Linux é amplamente utilizado em servidores, supercomputadores, dispositivos embarcados e é a base de muitas distribuições de sistema operacional para uso doméstico e empresarial.</p><br><br>
+    <p class="textos"> <b> Uma distribuição linux é</b>  uma versão específica do sistema operacional Linux que inclui o kernel Linux, softwares adicionais, bibliotecas e ferramentas de sistema para fornecer uma experiência de usuário completa. Cada distribuição Linux tem seus próprios objetivos e público-alvo, o que leva a diferentes abordagens na seleção e configuração de software. Algumas da distribuições incluem:</p><br>
+
+    <p class="lista"><b>Ubuntu:</b> Uma das distribuições mais populares para usuários iniciantes, conhecida por sua facilidade de uso e vasta comunidade de suporte.</p>
+    <p class="lista"><b>Fedora:</b> Mantida pela comunidade Fedora e apoiada pela Red Hat, é conhecida por incluir software mais recente e inovações em tecnologia.</p>
+    <p class="lista"><b>Debian:</b> Conhecida por sua estabilidade e política estrita de software livre. Debian serve como base para muitas outras distribuições.</p>
+    <p class="lista"><b>Linux Mint:</b> Projetada para ser fácil de usar e amigável, oferece uma interface semelhante à do Windows para ajudar os novos usuários a fazer a transição para o Linux.</p>
+    <br>
+
+    
+    <section class="section2" id="section1">
+      <br>
+      <h1 class="titulo2">Roots e repositórios</h1>
+      <p class="textos2">No contexto do sistema operacional Linux e outros sistemas baseados em Unix, <b>"root" é o superusuário ou administrador</b> do sistema. O usuário root tem permissões totais e irrestritas para acessar e modificar todos os arquivos, diretórios e configurações do sistema. O termo "root" vem da raiz (root, em inglês) do sistema de arquivos, que é o diretório principal a partir do qual todos os outros diretórios e arquivos derivam. O usuário root possui permissões elevadas, o que significa que pode executar comandos que podem afetar todo o sistema, incluindo a instalação e remoção de software, modificação de configurações críticas do sistema e criação/remoção de usuários. Como tal, é importante usar o poder do usuário root com cautela para evitar danificar ou comprometer o sistema.</p><br><br>
+      <p class="textos2"> <b>Um repositório</b> (também conhecido como repo) <b>é um local centralizado onde os pacotes de software são armazenados e gerenciados.</b> Estes pacotes contêm programas, bibliotecas, drivers e outros componentes de software que podem ser instalados no sistema Linux. Os repositórios permitem que os usuários do Linux encontrem, baixem e instalem software de maneira fácil e segura, sem a necessidade de procurar manualmente na internet por arquivos de instalação.</p>
+      
+
+      <h1 class="titulo2">Explicando o KDE e Gnome</h1>
+      <p class="textos2"> O <b>KDE</b> e o <b>GNOME</b> são dois dos ambientes de desktop mais populares no mundo Linux. Ambos são interfaces gráficas de usuário (GUI) que fornecem um ambiente visual para os usuários interagirem com seus sistemas operacionais. KDE é um ambiente de desktop que tem uma filosofia de design centrada no usuário, buscando oferecer uma experiência de desktop intuitiva e rica em recursos, enquanto o Gnome preza pela simplicidade e minimalismo, facilitando o uso do usuário.</p>
+   
+    </section>
+  
+   
+  <div class="minha-div">
+    <h1>Instalando o Linux</h1>
+    <p class="textos">Instalar o sistema Linux em um computador pode parecer assustador para quem não está familiarizado com o processo, mas na verdade, é bastante simples. Aqui está um guia passo a passo para ajudá-lo a instalar o Linux em seu computador:</p>
+    
+      <p class="lista"><b>Passo 1: Escolha uma Distribuição Linux -</b>
+      Existem várias distribuições Linux disponíveis, cada uma com suas próprias características e interfaces. Alguns exemplos populares incluem Ubuntu, Fedora, Debian e Linux Mint. Para iniciantes, o Ubuntu é uma escolha sólida devido à sua facilidade de uso e suporte comunitário.</p>
+   
+      <p class="lista"><b>Passo 2: Faça Backup dos Seus Dados -</b>
+      Antes de começar, é crucial fazer backup de todos os seus dados importantes para evitar a perda de dados durante o processo de instalação.</p>
+   
+      <p class="lista"><b>Passo 3: Crie um Pendrive de Instalação (ou DVD) -</b>
+      Você precisará criar um dispositivo de instalação inicializável, como um pendrive USB ou um DVD. Você pode baixar a imagem ISO da distribuição Linux escolhida no site oficial e usar um software como Rufus (para Windows) ou balenaEtcher (para Windows, macOS e Linux) para criar o dispositivo inicializável.</p>
+   
+      <p class="lista"><b>Passo 4: Inicialize o Computador a Partir do Dispositivo de Instalação</b>
+      Insira o pendrive USB ou o DVD no computador e reinicie-o. Você pode precisar alterar a ordem de inicialização no BIOS/UEFI para que o computador inicialize a partir do dispositivo USB ou DVD.</p>
+   
+      <p class="lista"><b>Passo 5: Inicie o Processo de Instalação -</b>
+      Após inicializar a partir do dispositivo de instalação, você será apresentado ao ambiente de instalação da distribuição Linux. Siga as instruções na tela para iniciar o processo de instalação. Você será solicitado a escolher o idioma, fuso horário e layout do teclado.</p>
+   
+      <p class="lista"><b>Passo 6: Particionamento do Disco (Opcional) -</b>
+      Durante a instalação, você terá a opção de particionar o disco rígido. Se você for um usuário iniciante, pode optar por deixar o instalador fazer isso automaticamente (escolhendo a opção de instalação ao lado do seu sistema operacional existente ou usando o disco inteiro para o Linux). Para usuários avançados, há a opção de particionamento manual.</p>
+   
+      <p class="lista"><b>Passo 7: Configure o Gerenciador de Boot (Grub) -</b>
+      Durante a instalação, você será solicitado a instalar o Grub (ou outro gerenciador de boot) no disco rígido. O Grub permitirá que você escolha entre o Linux e outros sistemas operacionais no momento da inicialização.</p>
+   
+      <p class="lista"><b>Passo 8: Complete a Instalação -</b>
+      Após configurar todas as opções, o instalador começará a copiar arquivos e instalar o sistema no seu computador. Isso pode levar algum tempo.</p>
+   
+      <p class="lista"><b>Passo 9: Reinicie o Computador -</b>
+      Após a conclusão da instalação, o instalador solicitará que você remova o dispositivo de instalação e reinicie o computador.</p>
+   
+      <p class="lista"><b>Passo 10: Configure o Linux -</b>
+      Ao iniciar o Linux pela primeira vez, você será guiado por um processo de configuração inicial, onde poderá criar uma conta de usuário, definir senhas e personalizar suas preferências.</p>
+    </div>
+      <div class="seta">
+        <a href="#"><img src="imagens/seta.jpg" width="40" height="40"></a>
+    </div>
+
+    <footer> Daniel Oliveira 2023 - &copyTodos os direitos reservados <br>Trabalho Acadêmico - Sem fins lucrativos</footer>
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
